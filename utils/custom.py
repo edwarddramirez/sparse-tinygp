@@ -63,7 +63,7 @@ def get_gp_samples_at_x_from_u(rng_key, num_samples, pred, params, x, xu):
     # key is to vectorize the operation with respect to a vector of rng_keys
     def generate_data(rng_key):
         # generate kernel parameters with best-fit GP parameters
-        base_kernel = load_kernel(params = params)
+        base_kernel = load_kernel(before_fit = False, params = params)
         gp_u = GaussianProcess(base_kernel, xu, diag=1e-3)
 
         gp_u_key, gp_key = jax.random.split(rng_key, 2)
