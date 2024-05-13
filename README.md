@@ -4,7 +4,7 @@ Bayesian inference using sparse gaussian processes via `tinygp`. Examples includ
 # Notebooks 
 1. `01_inference_sparse_gp.ipynb`: SVI with a Sparse GP
 2. `02_2d_sparse_gp.ipynb`: 2D Sparse GP
-3. `03_rffs_sparse_gp.ipynb`: SVI with RFF-approximation to sparse-GP (Bonus)
+3. `03_rffs_sparse_gp.ipynb`: SVI with RFF-approximation to sparse-GP (Allows Sampling Sparse GP Posterior over Many Inputs after Fit)
 
 # Installation
 Run the `environment.yml` file by running the following command on the main repo directory:
